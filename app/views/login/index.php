@@ -1,9 +1,11 @@
 <?php 
   $title = "Login";
-	require_once 'app/views/templates/headerPublic.php'; 
+  //$password=password_hash("Mani@1234",PASSWORD_DEFAULT);
+  //print($password);
+	require_once 'app/views/templates/headerPublic.php';
+	
+    //print(phpinfo());
 ?>
-
-</ul>
 <body class="align">	
   <div class="grid">
     <form method="post" action="login/verify" class="form login">

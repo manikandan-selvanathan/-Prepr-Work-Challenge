@@ -20,7 +20,7 @@ if (!isset($_SESSION['auth'])) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
         <script src="..\app\public\js\custom.js"></script>
-        <script src="http://maps.google.com/maps/api/js?key=AIzaSyB25mmKi_IZTWfph5NMSOHaGtVyyz3wJTY&sensor=false" type="text/javascript"></script>  
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyB25mmKi_IZTWfph5NMSOHaGtVyyz3wJTY&sensor=false" type="text/javascript"></script>  
         <style>
             body>.container {
                 padding: 60px 15px 0;

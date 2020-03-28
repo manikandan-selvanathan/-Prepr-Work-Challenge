@@ -4,10 +4,10 @@
  {
    if(searchQuery)
    {
-     var url="http://localhost/labs/search/"+searchQuery;
+     var url="https://sc19046077.run.goorm.io/labs/search/"+searchQuery;
    }
    else{
-     var url="http://localhost/labs/all";
+     var url="https://sc19046077.run.goorm.io/labs/all";
    }
      $.blockUI({ css: { 
        border: 'none', 
@@ -86,7 +86,7 @@
           if (window.location.href.indexOf("admin") > -1) {
             if(value)
             {
-              window.location.href = "http://localhost/Labs/"+value;
+              window.location.href = "https://sc19046077.run.goorm.io/Labs/"+value;
             }
             return;
           }

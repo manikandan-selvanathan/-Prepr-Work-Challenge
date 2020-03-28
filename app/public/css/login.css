@@ -79,7 +79,8 @@ body {
 }
 
 a {
- 
+  color: var(--anchorColor);
+  text-decoration: none;
   transition: color 0.3s;
 }
 

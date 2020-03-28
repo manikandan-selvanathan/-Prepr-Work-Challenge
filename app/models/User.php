@@ -18,10 +18,14 @@ class User {
         $statement->bindValue(':username', $username);
         $statement->execute();
         $rows = $statement->fetch(PDO::FETCH_ASSOC);
+		
+		
+		
+		
 		if (password_verify($password, $rows['pass'])) {
 			$_SESSION['auth'] = 1;
 			unset($_SESSION['failedAuth']);
-			header('Location: /labs');
+			header('Location: /home');
 			die;
 		} else {
 			if(isset($_SESSION['failedAuth'])) {
@@ -32,7 +36,9 @@ class User {
 			header('Location: /login');
 			die;
 		}
-	}
+    }
+	
+	
 	
 	//Since username is unique, if it is duplicate, it will throw an error.
 	public function register ($username, $pass, $first_name, $last_name)
