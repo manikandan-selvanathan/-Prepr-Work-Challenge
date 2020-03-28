@@ -26,6 +26,18 @@ class Lab
 		    return $labs;
 	}
     
+	
+	   
+    public function getLab($id)
+	{
+			$db = db_connect();
+            $statement = $db->prepare("select * from labs where id=:id");
+            $statement->bindValue(':id', $id); 
+			$statement->execute();
+			$labs = $statement->fetchAll(PDO::FETCH_ASSOC);
+		    return $labs;
+	}
+    
     
 	
 }

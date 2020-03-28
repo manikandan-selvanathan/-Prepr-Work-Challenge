@@ -4,10 +4,10 @@
  {
    if(searchQuery)
    {
-     var url="https://sc19046077.run.goorm.io/labs/search/"+searchQuery;
+     var url="/home/search/"+searchQuery;
    }
    else{
-     var url="https://sc19046077.run.goorm.io/labs/all";
+     var url="/home/all";
    }
      $.blockUI({ css: { 
        border: 'none', 
@@ -33,6 +33,7 @@
         {
           html+="<div class='col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12' style='opacity: 1;'>"+
           "<div class='product-box item-mb zoom-gallery'>"+
+			  "<input id='idOfTheLab' type='hidden' href='javascript:void(0);' onclick='showMap("+data[i]['id']+")' value="+data[i]	['id']+">"+
               "<div class='item-mask-wrapper'>"+
                   "<div class='item-mask secondary-bg-box'><img src='../app/public/images/lab_icon.png' alt='categories' class='img-fluid'>"+
                   "<div class='trending-sign active' data-tips='Featured'> <i class='fa fa-bolt' aria-hidden='true'></i> </div>"+
@@ -50,7 +51,7 @@
                       "<li class='tag-ctg'><i class='fa fa-tag' aria-hidden='true'></i> "+data[i]['privacy']+"</li>"+
                       "</ul>"+
                   "<p>"+data[i]['address']+"</p>"+
-                  "<a href='/openMap' class='product-details-btn'>Open Map</a>"+
+                  "<a href='//showMap/"+data[i]['id']+"' class='product-details-btn' >Open Map</a>"+
               "</div>"+
           "</div>"+
         "</div>";
@@ -71,11 +72,16 @@
 
 		$(document).ready(function(){ 
 
-      $("#input").keyup(function(event) {
-        if (event.keyCode === 13) {
-            $(".searchbtn").click();
-        }
-    });
+		  $("#input").keyup(function(event) {
+			if (event.keyCode === 13) {
+				$(".searchbtn").click();
+			}
+    	  });
+			
+			$(".product-details-btn").click(function(){
+				console.log("Hello");
+				
+			});
 
       $(".searchbtn").click(function()
       {
@@ -86,7 +92,7 @@
           if (window.location.href.indexOf("admin") > -1) {
             if(value)
             {
-              window.location.href = "https://sc19046077.run.goorm.io/Labs/"+value;
+              window.location.href = "/Labs/"+value;
             }
             return;
           }
