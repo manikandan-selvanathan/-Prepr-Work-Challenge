@@ -51,7 +51,7 @@
                       "<li class='tag-ctg'><i class='fa fa-tag' aria-hidden='true'></i> "+data[i]['privacy']+"</li>"+
                       "</ul>"+
                   "<p>"+data[i]['address']+"</p>"+
-                  "<a href='//showMap/"+data[i]['id']+"' class='product-details-btn' >Open Map</a>"+
+                  "<a href='/viewmap/"+data[i]['id']+"' class='product-details-btn' >Open Map</a>"+
               "</div>"+
           "</div>"+
         "</div>";
@@ -89,10 +89,10 @@
 
         if($("#input").hasClass("active-width"))
         {
-          if (window.location.href.indexOf("admin") > -1) {
+          if (window.location.href.indexOf("admin") > -1 || window.location.href.indexOf("viewmap") > -1) {
             if(value)
             {
-              window.location.href = "/Labs/"+value;
+              window.location.href = "/home/"+value;
             }
             return;
           }

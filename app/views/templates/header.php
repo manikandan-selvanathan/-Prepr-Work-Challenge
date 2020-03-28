@@ -45,7 +45,7 @@ if (!isset($_SESSION['auth'])) {
                             </a>
                         </li>
 						<li class="nav-item">
-                            <a class="nav-link" href="/labs/admin">Admin
+                            <a class="nav-link" href="/home/admin">Admin
                             </a>
                         </li> 
                     </ul>
