@@ -1,3 +1,5 @@
-# map202-20w-lab1
+# Prepr Work Challenge
+Manikandan Selvanathan
+manikandan.selvanathan.ca@gmail.com
 
-http://sc19046077.run.goorm.io/
+https://preprworkchallenge-flvas.run-us-west2.goorm.io/
