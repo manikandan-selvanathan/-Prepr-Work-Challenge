@@ -35,11 +35,11 @@
           "<div class='product-box item-mb zoom-gallery'>"+
 			  "<input id='idOfTheLab' type='hidden' href='javascript:void(0);' onclick='showMap("+data[i]['id']+")' value="+data[i]	['id']+">"+
               "<div class='item-mask-wrapper'>"+
-                  "<div class='item-mask secondary-bg-box'><img src='../app/public/images/lab_icon.png' alt='categories' class='img-fluid'>"+
+                  "<div class='item-mask secondary-bg-box'><img src='../app/public/images/computer_lab.png' alt='categories' class='img-fluid'>"+
                   "<div class='trending-sign active' data-tips='Featured'> <i class='fa fa-bolt' aria-hidden='true'></i> </div>"+
                       "<div class='title-ctg'>"+data[i]['privacy']+"</div>"+
                        
-                      "<div class='symbol-featured'><img src='../app/public/images/lab_icon.png' alt='lab' class='img-fluid'> </div>"+
+                      "<div class='symbol-featured'><img src='../app/public/images/computer_lab.png' alt='lab' class='img-fluid'> </div>"+
                   "</div>"+
               "</div>"+
               "<div class='item-content'>"+

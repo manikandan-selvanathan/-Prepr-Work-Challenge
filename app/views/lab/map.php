@@ -24,10 +24,18 @@ require_once 'app/views/templates/header.php';
 
     var marker, i;
 
+    var icon = {
+    url: "../app/public/images/map_icon.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+ 
     for (i = 0; i < locations.length; i++) { 
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
+        map: map,
+        icon:null
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
