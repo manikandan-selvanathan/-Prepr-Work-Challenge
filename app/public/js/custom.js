@@ -44,7 +44,7 @@
               "</div>"+
               "<div class='item-content'>"+
                   "<div class='title-ctg'>"+data[i]['privacy']+"</div> "+
-                  "<h3 class='long-title'><a href='single-product1.html'>"+data[i]['title']+"</a></h3>"+
+                  "<h3 class='long-title'><a href='/viewmap/"+data[i]['id']+"'>"+data[i]['title']+"</a></h3>"+
                   "<ul class='upload-info'>"+
                   "<li class='date'><i class='fa fa-clock-o' aria-hidden='true'></i> "+data[i]['category']+" </li>"+
                       "<li class='place'><i class='fa fa-map-marker' aria-hidden='true'></i> "+data[i]['city']+","+data[i]['country']+"</li>"+

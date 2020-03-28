@@ -3,7 +3,7 @@
 	require_once 'app/views/templates/headerPublic.php';
 	 
 ?> 
-<div class="container">
+<div class="container" style="margin-top:100px">
  
  
 

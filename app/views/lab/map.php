@@ -25,8 +25,8 @@ require_once 'app/views/templates/header.php';
     var marker, i;
 
     var icon = {
-    url: "../app/public/images/map_icon.png",  
-    scaledSize: new google.maps.Size(50, 50), 
+    url: "../app/public/images/marker.png",  
+    scaledSize: new google.maps.Size(40, 40), 
     origin: new google.maps.Point(0,0),  
     anchor: new google.maps.Point(0, 0)  
 };
