@@ -9,7 +9,5 @@ class Logout extends Controller
 		header('Location:/login');	 
 		die;
 	}
-	
-	 
 }
 ?>

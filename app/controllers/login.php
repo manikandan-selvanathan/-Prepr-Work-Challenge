@@ -7,26 +7,18 @@ class Login extends Controller {
     }
     
     public function verify()
-    
     {
         $username = $_REQUEST['user_name'];
         $password = $_REQUEST['password'];
-        
         $user = $this->model('User');
-        
         $user->authenticate($username, $password);
-		
-        
     }
-
 
     public function register()
     {		
         $this->view('login/register');
     }
 
-
-    
     public function test_input($data) 
     {
       $data = trim($data);
@@ -35,7 +27,6 @@ class Login extends Controller {
       return $data;
     }
   
-
     public function validate_registration()
     {
       $user = $this->model('User');
